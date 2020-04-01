@@ -1,0 +1,9 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<input type="text" name="src" [(ngModel)]="search" >
+<br />
+<div *ngFor="let data of demoData | search: search">
+  {{data.ID}} . User - {{data.User}} - {{data.FormName}} - {{data.WinHandle}}
+</div>
